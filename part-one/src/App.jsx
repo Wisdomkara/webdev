@@ -1,9 +1,5 @@
-const Header = ({course}) => {
-  return (
-  <>
-{course}
-  </>
-  )
+const Header=(props)=>{
+  return <h1>{props.course}</h1>
 }
 
 const Content = ({part1,exercises1,part2,exercises2,part3,exercises3}) => {
@@ -22,6 +18,7 @@ const Total = ({exercises1,exercises2,exercises3}) => {
   )
 }
 const App = () => {
+ 
 
   const course="Half Stack application development"
   const part1="Fundamentals of React"
@@ -36,7 +33,13 @@ const App = () => {
     <Content part1={part1} exercises1={exercises1} part2={part2} exercises2={exercises2} part3={part3} exercises3={exercises3}/>
     <Total exercises1={exercises1} exercises2={exercises2} exercises3={exercises3}/>
 
+   
+     
     </>
+
+    
   )
+ 
 }
+                
 export default App
